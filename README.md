@@ -1,3 +1,3 @@
 # Jobflix-Admin Page
 
-Project needs restructuring and some refactoring.
+Project needs folder restructuring and some refactoring.
