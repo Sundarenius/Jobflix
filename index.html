@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header class="topHeader">
+      <h1><span class="jobflix-title">
+          <span class="jobflix-title1">Job</span><span class="jobflix-title2">flix</span>
+        </span> - ADMIN PAGE</h1>
+        <div id="navigationBtns">
+            <h3 id="notificationsBtn">Notifikationer</h3>
+            <h3 id="businessBtn">Företag</h3>
+            <h3 id="applicantsBtn">Jobbsökare</h3>
+            <h3 id="pricesBtn">Prispaketer</h3>
+        </div>
+    </header>
+
+    <main>
+        <section id="business">
+          <h2>Business PAGE<span id="howManyBusinesses"></span></h2>
+          <p>Uppdateras när sidan laddas om.</p>
+        </section>
+
+        <section id="applicants">
+            <h2>Jobbsökare -<span id="howManyApplicants"></span></h2>
+            <p>Uppdateras när sidan laddas om.</p>
+        </section>
+
+        <section id="notifications">
+            <h2>Notifikationer<span id="howManyNotifications"></span></h2>
+            <h3>Skicka notifikationer från "noreply@jobflix.se"</h3>
+            <section id="notificationsSection"></section>
+        </section>
+
+        <section id="prices">
+            <h2>Prispaketer - PAGE</h2>
+            <h3 style="padding:10px 0" id="totalGoldPackages"></h3>
+            <h3 style="padding-bottom:10px" id="totalPlatinumPackages"></h3>
+            <h3 style="padding-bottom:10px" id="totalPackages"></h3>
+            <h3 style="padding-bottom:10px" id="totalInSales"></h3>
+            <h3 style="padding-bottom:10px">Fakuterar per kalendermånad</h3>
+            <h3 style="padding-bottom:10px">OBS! ALLA HAR GRATIS TILL 31/5/2019 p.g.a BETA v.</h3>
+            <p>Uppdateras när sidan laddas om.</p>
+        </section>
+    </main>
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js"></script> -->
+    <script>
+      // Initialize Firebase
+      // TODO: Replace with your project's customized code snippet
+      const config = {
+        apiKey: 'AIzaSyD9V-g85UHUsPJOuEdK7jARC-sO23eUHTI',
+        authDomain: 'instawork-814df.firebaseapp.com',
+        databaseURL: 'https://instawork-814df.firebaseio.com',
+        projectId: 'instawork-814df',
+        storageBucket: 'instawork-814df.appspot.com',
+        messagingSenderId: '76780395694'
+      }
+      firebase.initializeApp(config)
+      // firebase.database().ref('admin').child('notifications')
+      //   .on('value', response => {
+      //   console.log(response.val())
+      // })
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
